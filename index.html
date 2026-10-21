@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body { background: #b7e0f9; color: #051a34; font-family: Arial, sans-serif; }
+    .page { min-height: calc(100vh - 66px); padding: 65px 22px 76px; text-align: center; }
+    .small-title { margin: 0; font-size: 30px; font-weight: 700; }
+    h1 { font-family: 'Kalam', 'Comic Sans MS', cursive; font-size: 56px; line-height: 1.15; margin: 61px 0 0; }
+    .heart { font-size: 15px; margin: 0 0 40px; line-height: 1; }
+    .cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 32px; max-width: 1130px; margin: 0 auto; text-align: left; }
+    .card { width: 342px; height: 360px; border: 2px solid #c840de; border-radius: 22px; overflow: hidden; background: #5ba4d1; transition: transform .2s, box-shadow .2s; }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 12px 25px #14305224; }
+    .art { width: 100%; height: 162px; overflow: hidden; background: #104a7f; }
+    .art svg { width: 100%; height: 100%; display: block; }
+    .content { padding: 25px 23px 22px; }
+    .content h2 { font-family: 'Kalam', 'Comic Sans MS', cursive; font-weight: 700; font-size: 37px; line-height: 1; margin: 0 0 10px; }
+    .content p { font-size: 14px; line-height: 1.62; margin: 0; }
+    footer { min-height: 66px; background: #06152b; color: white; display: flex; justify-content: center; align-items: center; padding: 18px; font-size: 16px; text-align: center; }
+    @media (max-width: 760px) {
+      .page { padding: 44px 16px 55px; }
+      .small-title { font-size: 23px; }
+      h1 { font-size: 49px; margin-top: 42px; }
+      .heart { margin-bottom: 30px; }
+      .cards { gap: 22px; }
+      .card { max-width: 100%; height: auto; min-height: 350px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <h2 class="small-title">Things I Like The Most</h2>
+    <h1>Favorites</h1>
+    <div class="heart" aria-hidden="true">♡</div>
+
+    <section class="cards" aria-label="My favorite things">
+      <article class="card">
+        <div class="art" role="img" aria-label="Music notes on a dark blue background">
+          <svg viewBox="0 0 342 162" xmlns="http://www.w3.org/2000/svg">
+            <rect width="342" height="162" fill="#144d80"/>
+            <g fill="#000" font-family="Arial, sans-serif">
+              <text x="7" y="104" font-size="73" font-weight="bold">♫</text>
+              <text x="72" y="105" font-size="49">★</text>
+              <text x="124" y="111" font-size="38">◦</text>
+              <text x="153" y="105" font-size="78">♪</text>
+              <text x="207" y="99" font-size="39">＋</text>
+              <text x="239" y="109" font-size="70">♫</text>
+              <text x="312" y="105" font-size="38">˚</text>
+            </g>
+          </svg>
+        </div>
+        <div class="content">
+          <h2>MUSIC</h2>
+          <p>Music is the universal language that speaks to our deepest emotions and experiences.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="art" role="img" aria-label="Computer showing colorful programming code">
+          <svg viewBox="0 0 342 162" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="codebg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#12294d"/><stop offset="1" stop-color="#4b67a7"/></linearGradient></defs>
+            <rect width="342" height="162" fill="url(#codebg)"/>
+            <circle cx="48" cy="31" r="40" fill="#a3c4ef" opacity=".12"/>
+            <circle cx="304" cy="141" r="73" fill="#9aa0ff" opacity=".10"/>
+            <rect x="55" y="15" width="232" height="133" rx="10" fill="#09182c" stroke="#81b8ec" stroke-width="3"/>
+            <rect x="55" y="15" width="232" height="22" rx="9" fill="#263f63"/>
+            <rect x="55" y="29" width="232" height="8" fill="#263f63"/>
+            <circle cx="70" cy="26" r="4" fill="#fc6d85"/><circle cx="83" cy="26" r="4" fill="#f3c76f"/><circle cx="96" cy="26" r="4" fill="#7ee0a7"/>
+            <g font-family="monospace" font-size="12" font-weight="bold">
+              <text x="73" y="58" fill="#bb91ff">&lt;html&gt;</text>
+              <text x="87" y="78" fill="#82d9ef">&lt;h1&gt;</text><text x="127" y="78" fill="#ffcd7a">Hello World!</text><text x="221" y="78" fill="#82d9ef">&lt;/h1&gt;</text>
+              <text x="87" y="98" fill="#8cf0b3">const</text><text x="134" y="98" fill="#f1f5ff"> code = </text><text x="205" y="98" fill="#ffb7a6">true;</text>
+              <text x="87" y="118" fill="#96bdf7">// keep learning</text>
+              <text x="73" y="136" fill="#bb91ff">&lt;/html&gt;</text>
+            </g>
+          </svg>
+        </div>
+        <div class="content">
+          <h2>CODING</h2>
+          <p>I enjoy coding because it lets me solve problems, create websites, and turn my ideas into something real.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="art" role="img" aria-label="Mobile Legends inspired game art with ML emblem">
+          <svg viewBox="0 0 342 162" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="mlbg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1a3c"/><stop offset=".55" stop-color="#284f92"/><stop offset="1" stop-color="#521f83"/></linearGradient>
+              <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff5a5"/><stop offset=".55" stop-color="#ecc35d"/><stop offset="1" stop-color="#b27426"/></linearGradient>
+            </defs>
+            <rect width="342" height="162" fill="url(#mlbg)"/>
+            <path d="M-15 140 L125 28 L181 110 L315 0 L370 35" fill="none" stroke="#5eacff" stroke-width="5" opacity=".28"/>
+            <path d="M-15 160 L108 74 L197 152 L340 62" fill="none" stroke="#b9a2ff" stroke-width="15" opacity=".16"/>
+            <path d="M171 13 L221 56 L204 107 L171 145 L138 107 L121 56 Z" fill="#062345" stroke="url(#gold)" stroke-width="5"/>
+            <path d="M139 57 L171 33 L203 57 L190 70 L171 56 L152 70 Z" fill="url(#gold)"/>
+            <text x="171" y="103" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-style="italic" font-size="46" fill="url(#gold)">ML</text>
+            <text x="171" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" letter-spacing="2" fill="#fff3c0">MOBILE LEGENDS</text>
+            <g fill="#f9d785" opacity=".75"><circle cx="42" cy="36" r="2"/><circle cx="303" cy="44" r="3"/><circle cx="290" cy="125" r="2"/><circle cx="55" cy="120" r="3"/></g>
+          </svg>
+        </div>
+        <div class="content">
+          <h2>GAMING</h2>
+          <p>Mobile Legends is one of my favorite games because I enjoy the teamwork, strategy, and exciting matches.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>© 2026 - Shawn Michael Torrefiel</footer>
+</body>
+</html>
